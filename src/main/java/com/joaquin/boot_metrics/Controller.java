@@ -8,14 +8,14 @@ import com.codahale.metrics.annotation.Timed;
 @RestController
 public class Controller {
 
-	@Timed
+    @Timed
     @RequestMapping("/hello")
     @ResponseBody
     String hello() {
         return "Hello World!";
     }
 
-	@Timed
+    @Timed
     @RequestMapping("/goodbye")
     @ResponseBody
     String goodbye() {
